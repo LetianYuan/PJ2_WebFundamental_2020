@@ -22,8 +22,8 @@
 
 ### 首页
 
-* **“收藏最多”**利用sql语句的`ORDER BY COUNT(travelimagefavor.ImageID) DESC`即可
-* **“随机”**利用sql语句的`ORDER BY rand()`即可
+* **“收藏最多”** 利用sql语句的`ORDER BY COUNT(travelimagefavor.ImageID) DESC`即可
+* **“随机”** 利用sql语句的`ORDER BY rand()`即可
 
 ### 浏览页
 
@@ -96,4 +96,7 @@ RESTFUL特点包括：
 
 例如：
 
-* 页码是利用GET方式实现的，例如http://letianyuan.xyz:63337/browse.php?page=3；图片详情页也是利用GET方式实现的，例如http://letianyuan.xyz:63337/picture_details.php?imageID=70；这样每个URI都代表了1种资源，实现了**幂等**。
+* 页码是利用GET方式实现的，例如http://letianyuan.xyz:63337/browse.php?page=3
+* 图片详情页也是利用GET方式实现的，例如http://letianyuan.xyz:63337/picture_details.php?imageID=70
+
+这样每个URI都代表了1种资源，实现了 **幂等**。
