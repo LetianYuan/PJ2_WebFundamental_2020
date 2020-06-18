@@ -100,3 +100,13 @@ RESTFUL特点包括：
 * 图片详情页也是利用GET方式实现的，例如http://letianyuan.xyz:63337/picture_details.php?imageID=70
 
 这样每个URI都代表了1种资源，实现了 **幂等**。
+
+### 网络安全
+
+* 涉及到类似“按标题查询”的地方，对SQL关键字进行删除来防止SQL注入
+* 上传页面用了php中的`htmlspecialchars`函数来防止XSS攻击
+* 涉及到数据库的地方都尽量采用了预处理语句来防止SQL注入
+* Cookie进行了加盐后base64加密处理
+* 对数据库进行`INSERT INTO`、`UPDATE`、`DELETE`的地方都对用户身份做了检查
+
+本人学识疏浅、能力有限，在网络安全的方面可能仍然还有许多漏洞。
