@@ -1,0 +1,179 @@
+@import url(reset.css);
+@import url(nav.css);
+@import url(footer.css);
+
+body
+{
+    min-width: 700px;
+}
+
+
+ul.container
+{
+    list-style: none;
+    width: calc(100% - 80px);
+    margin: 65px auto 20px auto;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+
+ul.container img
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /*自动裁剪图片*/
+    border-radius: 10px;
+}
+
+ul.container li.title
+{
+    /*font-family: yuppy, serif;*/
+    color: #FFFFFF;
+    width: 100%;
+    position: relative;
+    top: -5px;
+    left: -5px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #0884CF;
+    border: 2px solid #0076C7;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .5);
+}
+
+ul.container ul.pictures a
+{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul.container ul.pictures
+{
+    list-style: none;
+}
+
+ul.container ul.pictures li
+{
+    display: block;
+    padding: 20px 30px;
+}
+
+ul.container ul.pictures span.image_right_area
+{
+    margin-left: 15px;
+    vertical-align: top;
+    display: inline-block;
+    float: right;
+    width: calc(100% - 320px);
+}
+
+ul.container ul.pictures span.image_description
+{
+    /*font-family: yuppy, serif;*/
+    font-size: 14pt;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+ul.container ul.pictures span.image_description strong
+{
+    font-size: 25pt;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul.container ul.pictures li:nth-child(2n+1)
+{
+    background: #FFFFFF;
+}
+
+ul.container ul.pictures li:nth-child(2n)
+{
+    background: #E8E8E8;
+}
+
+/*ul.container ul.pictures li:hover*/
+/*{*/
+/*    background: #D0D0D0;*/
+/*}*/
+
+
+ul.container ul.pictures button.modify
+{
+    width: 90px;
+    height: 32px;
+    font-size: 15pt;
+    margin: 0 20px;
+    background: linear-gradient(#48C4FF, #0884FF, #48C4FF);
+    color: #FFFFFF;
+    border: 1px solid #56707f;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+ul.container ul.pictures button.modify:hover
+{
+    background: linear-gradient(#48C4FF, #48C4FF, #0884FF);
+}
+
+ul.container ul.pictures button.delete
+{
+    width: 90px;
+    height: 32px;
+    font-size: 15pt;
+    background: linear-gradient(#D9534F, #C12E2A, #D9534F);
+    color: #FFFFFF;
+    border: 1px solid #56707f;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+ul.container ul.pictures button.delete:hover
+{
+    background: linear-gradient(#D9534F, #D9534F, #C12E2A);
+}
+
+div.page_number
+{
+    text-align: center;
+}
+
+div.page_number a
+{
+    padding: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    /*font-family: yuppy, serif;*/
+    font-size: 14pt;
+    color: #0884FF;
+}
+
+div.page_number a.active
+{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+div.page_number a:hover
+{
+    font-weight: bold;
+    color: #000000;
+}

@@ -1,0 +1,236 @@
+@import url(reset.css);
+@import url(nav.css);
+@import url(footer.css);
+
+body
+{
+    min-width: 700px;
+}
+
+nav li.search a:link, nav li.search a:visited, nav li.search a:active
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #00449F;
+}
+
+nav li.search a:hover
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #0064AF;
+}
+
+fieldset
+{
+    width: calc(100% - 80px);
+    margin: 60px auto 20px auto;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+fieldset ul
+{
+    list-style: none;
+}
+
+fieldset li.title
+{
+    /*font-family: yuppy, serif;*/
+    color: #FFFFFF;
+    width: 100%;
+    position: relative;
+    top: -5px;
+    left: -5px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #0884CF;
+    border: 2px solid #0076C7;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .5);
+}
+
+fieldset li.content
+{
+    padding: 10px 25px 10px 15px;
+}
+
+fieldset li.content label
+{
+    margin-right: 15px;
+}
+
+
+fieldset li.content input[type="text"]
+{
+    height: 35px;
+    width: 100%;
+    font-size: 15pt;
+    margin-top: 8px;
+    border-bottom: 1px solid #56707f;
+    display: inline-block;
+    background: #fff;
+}
+
+fieldset li.content input[type="text"]:focus
+{
+    background-color: #E0E0E0;
+}
+
+fieldset li.content input[type="submit"]
+{
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+    background: linear-gradient(#48C4FF, #0884FF, #48C4FF);
+    color: #FFFFFF;
+    border: 1px solid #56707f;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+fieldset li.content input[type="submit"]:hover
+{
+    background: linear-gradient(#48C4FF, #48C4FF, #0884FF);
+}
+
+ul.result
+{
+    list-style: none;
+    width: calc(100% - 80px);
+    margin: 30px auto 20px auto;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+
+ul.result img
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 170px;
+    object-fit: cover; /*自动裁剪图片*/
+    border-radius: 10px;
+}
+
+ul.result li.title
+{
+    /*font-family: yuppy, serif;*/
+    color: #FFFFFF;
+    width: 100%;
+    position: relative;
+    top: -5px;
+    left: -5px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #0884CF;
+    border: 2px solid #0076C7;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .5);
+}
+
+ul.result ul.pictures a
+{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul.result ul.pictures
+{
+    list-style: none;
+}
+
+ul.result ul.pictures li
+{
+    display: block;
+    padding: 20px 30px;
+}
+
+ul.result ul.pictures li .image_description
+{
+    display: block;
+    word-break: break-all;
+}
+
+ul.result ul.pictures span
+{
+    margin-left: 15px;
+    vertical-align: top;
+    position: relative;
+    top: 30px;
+    width: calc(100% - 270px);
+    /*font-family: yuppy, serif;*/
+    font-size: 14pt;
+    float: right;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul.result ul.pictures span strong
+{
+    font-size: 25pt;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul.result ul.pictures li:nth-child(2n+1)
+{
+    background: #FFFFFF;
+}
+
+ul.result ul.pictures li:nth-child(2n)
+{
+    background: #E8E8E8;
+}
+
+/*ul.result ul.pictures li:hover*/
+/*{*/
+/*    background: #D0D0D0;*/
+/*}*/
+div.page_number
+{
+    text-align: center;
+}
+
+div.page_number a
+{
+    padding: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    /*font-family: yuppy, serif;*/
+    font-size: 14pt;
+    color: #0884FF;
+}
+
+div.page_number a.active
+{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+div.page_number a:hover
+{
+    font-weight: bold;
+    color: #000000;
+}

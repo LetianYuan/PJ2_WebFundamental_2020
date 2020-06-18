@@ -1,0 +1,156 @@
+@import url(reset.css);
+@import url(nav.css);
+@import url(footer.css);
+
+img.picture
+{
+    width: 100%;
+    height: 100%;
+}
+
+.vague_border
+{
+    display: inline-block;
+    top: 0;
+    width: 50vw;
+    position: relative;
+    float: left;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border: none;
+}
+
+.vague_border:after
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 2px 3px rgba(232, 232, 232, 1) inset;
+}
+table
+{
+    width: 42vw;
+}
+
+table.picture_description
+{
+    margin-top: 80px;
+    margin-right: 4vw;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .5);
+    border-radius: 9px;
+}
+
+table.picture_description caption
+{
+    /*font-family: yuppy, serif;*/
+    color: #FFFFFF;
+    font-size: 3.5vw;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    margin-bottom: 4vw;
+    background: #0884CF;
+    border: 4px solid #0076C7;
+    border-radius: 9px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .5);
+}
+
+table.picture_description tr
+{
+    /*font-family: yuppy, serif;*/
+    text-align: left;
+    color: #0884CF;
+}
+
+table.picture_description tr:nth-child(2n+1)
+{
+    background: #FFFFFF;
+}
+
+table.picture_description tr:nth-child(2n)
+{
+    background: #E8E8E8;
+}
+
+table.picture_description th
+{
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding-left: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 7vw;
+}
+
+table.picture_description td
+{
+    color: #000000;
+    font-size: 1.7vw;
+    padding-left: 2vw;
+    display: block;
+    word-break: break-all;
+}
+
+.interact
+{
+    float: right;
+    margin-right: 5vw;
+    margin-top: 1.5vw;
+}
+
+.interact img
+{
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+}
+
+.collect img
+{
+    margin-left: 5vw;
+    background: url("../img/favorite.png") no-repeat;
+    background-size: 3vw;
+}
+
+.likes img
+{
+    background: url("../img/like.png") no-repeat;
+    background-size: 3vw;
+}
+
+.interact a:link, .interact a:visited, .interact a:active
+{
+    text-decoration: none;
+}
+
+.interact span
+{
+    position: relative;
+    top: -0.8vw;
+    /*font-family: yuppy, serif;*/
+    color: #000000;
+    font-size: 1.6vw;
+}
+
+.interact a:hover span
+{
+    color: #0884CF;
+}
+
+.collect:hover img
+{
+    background: url("../img/favorite_hover.png") no-repeat;
+    background-size: 3vw;
+}
+
+.likes:hover img
+{
+    background: url("../img/like_hover.png") no-repeat;
+    background-size: 3vw;
+}

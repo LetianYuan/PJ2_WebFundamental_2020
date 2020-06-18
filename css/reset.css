@@ -1,0 +1,38 @@
+body, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, p, span, div, object, iframe, pre, a, abbr, cite, input, button, select, option, fieldset
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Microsoft YaHei UI", serif;
+    font-size: 100%;
+    outline: 0;
+}
+
+body
+{
+    background: #E8E8E8;
+}
+
+/*@font-face*/
+/*{*/
+/*    font-family: yuppy;*/
+/*    src: url("../../font/MYuppy.ttf");*/
+/*}*/
+
+@font-face
+{
+    font-family: ink;
+    src: url('../font/Inkfree.ttf');
+}
+
+/*@font-face*/
+/*{*/
+/*    font-family: navleft;*/
+/*    src: url('../../font/华康少女全特符.ttf');*/
+/*}*/
+
+/*@font-face*/
+/*{*/
+/*    font-family: navright;*/
+/*    src: url('../../font/简繁娃娃体.ttf');*/
+/*}*/

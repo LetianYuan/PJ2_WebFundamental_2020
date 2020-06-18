@@ -1,0 +1,149 @@
+body
+{
+    margin-top: 46px;
+}
+
+nav
+{
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    width: 100%;
+    background-color: #0884CF;
+    color: #FFFFFF;
+    clear: both;
+    height: 46px;
+    display: block;
+    content: "";
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .5);
+}
+
+nav li
+{
+    list-style: none;
+    float: left;
+    width: 72px;
+    height: 46px;
+}
+
+nav li a
+{
+    display: inline-block;
+    line-height: 46px;
+    width: 72px;
+    height: 46px;
+    text-align: center;
+    font-size: 18pt;
+    /*font-family: navleft, serif;*/
+    color: #FFFFFF;
+}
+
+nav li.user
+{
+    list-style: none;
+    float: right;
+    width: 144px;
+    height: 46px;
+}
+
+nav li.user a
+{
+    display: inline-block;
+    line-height: 46px;
+    height: 46px;
+    width: 144px;
+    text-align: center;
+    font-size: 18pt;
+    /*font-family: navright, serif;*/
+    color: #FFFFFF;
+}
+
+nav span.dropdown_caret
+{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    content: "";
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-right: 5px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 5px solid transparent;
+}
+
+nav a:link, nav a:visited, nav a:active
+{
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+nav a:hover
+{
+    line-height: 47px;
+    padding-left: 1px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #0064AF;
+}
+
+nav ul.menu
+{
+    list-style: none;
+    display: none;/*下拉栏隐藏*/
+    z-index: 9999;/*始终置顶*/
+    position: fixed;
+    top: 46px;
+    width: 128px;
+    background: #E8FCFF;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .5);
+}
+
+nav ul.menu li
+{
+    list-style: none;
+    float: none;
+    width: 120px;
+    height: 40px;
+}
+
+nav ul.menu a
+{
+    display: block;
+    text-align: left;
+    padding-left: 9px;
+    color: black;
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    /*font-family: navright, serif;*/
+    font-size: 15pt;
+}
+
+nav ul.menu img
+{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 10%;
+    padding-right: 5px;
+}
+
+nav ul.menu a:hover
+{
+    line-height: 41px;
+    padding-left: 10px;
+    width: 118px;
+    text-decoration: none;
+    border-radius: 9px 9px 9px 9px;
+    background: #C0DFE2;
+}
+
+nav li.user:hover ul.menu
+{
+    display: block;/*下拉栏出现*/
+}

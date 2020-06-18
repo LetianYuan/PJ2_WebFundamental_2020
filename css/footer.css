@@ -1,0 +1,27 @@
+footer.copyright
+{
+    display: block;
+    clear: both;
+    color: #FFFFFF;
+    width: 100%;
+    min-width: inherit;
+    font-size: 15px;
+    padding: 15px 0 15px 0;
+    line-height: 25px;
+    background: #00449F;
+}
+
+footer.copyright span
+{
+    display: inline-block;
+    padding-left: 50px;
+}
+
+footer.copyright img
+{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 80px;
+}
